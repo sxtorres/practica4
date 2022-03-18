@@ -1,0 +1,501 @@
+  1.- RESPON:
+
+1.   Què és una partició?
+
+2.   Enumera i explica els tres tipus de particions que hi ha.
+
+3.   Què és un sistema de fitxers? Per a que serveix?
+NTFS. FAT. Excad4.
+
+4.   Quins sistemes d’arxius suporta Windows. Enumeralos i a més indica alguna característica de cadascun.
+
+5.   Què és el MBR (Master Boot Record)?
+El sistema de arranque de un disco duro.
+
+6.   Què és un gestor d’arranc?
+
+7.   Quina diferència hi ha entre fer un formateig a baix nivell i un a alt nivell?
+
+
+
+2.- Comandaments sobre directoris i arxius
+
+Treballarem els comandaments elementals del DOS per a tractar fitxers i arxius. 
+Per a això començarem mirant l’ajuda que ens ofereix el DOS de cada un i anotarem la descripció al costat de cada comanda. (“c:\>comanda /?” i polsem INTRO)
+
+Una vegada dins de l’ajuda, cal mirar l’estructura de la comanda. Fixar-se en els possibles arguments i modificadors i entendre que fan. En cas de dubte el millor és fer la prova.
+
+NOTA: és possible que per resoldre qualsevol apartat hagis de crear, esborrar, renombrar  fitxers i directoris extra a part dels que es demanen directament a l'activitat.
+
+
+Després d’això respon les preguntes.
+
+Utilitzant la comanda DIR respon:
+
+a) Escriu el comandament que usaries per a veure la llista de fitxers i subdirectoris de c:\>WINDOWS parant cada vegada que la pantalla s’ompli.
+
+COMANDA: dir /P C:\Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b)  Escriu  el  comandament  que  usaries  per  a  veure  la  llista  de  fitxers  i subdirectoris ocults de c:\>WINDOWS.
+
+COMANDA: dir /AH C:\Windows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c) Escriu el comandament que usaries per a veure la llista de fitxers i subdirectoris de c:\>WINDOWS ordenats per grandària i parant cada vegada que la pantalla s’ompli.
+
+COMANDA: dir /OS /P
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Utilitzant la comanda CD respon :
+
+d) Escriu el comandament per a canviar al directori c:\>WINDOWS\system32\
+
+COMANDA: C:\>WINDOWS>cd System32 
+
+
+
+
+e) Si ara escrius “cd..” i polses INTRO, que succeeix?
+
+Me sube al directorio superior.
+
+
+
+
+
+Utilitzant la comanda MD o MKDIR respon:
+
+f) Escriu el comandament per a crear el directori c:\>Practica2\
+
+COMANDA: c:\Windows>mkdir C:\practica2
+
+
+
+
+
+g)   Ara crea el subdirectori Prova dins de c:\>Practica2\. Es podrien haver creat els dos en una sola instrucció? Quina seria?
+
+COMANDA: c:\Windows>mkdir C:\practica2\prova
+
+
+
+
+
+Utilitzant la comanda RD o RMDIR respon:
+
+h) Escriu la instrucció per a eliminar el subdirectori prova que has creat en el punt anterior.
+
+COMANDA: c:\>rd C:\practica2
+
+
+
+
+i) Torna a crear un subdirectori amb el nom que vulgues i elimina  el directori practica2. Quin modificador usaràs? Què passa quan l’intentes eliminar?
+
+
+COMANDA:  c:\>rd /S /Q C:\practica2
+
+
+
+
+
+Ara  treballarem  els  comandaments  sobre  arxius.  Aprendrem  com  copiar arxius, reanomenar-los i eliminar-los.
+
+
+Utilitzant la comanda COPY respon:
+
+j) Escriu la instrucció per a copiar tots els arxius que comencen per a i amb extensió .dll del directori c:\>WINDOWS\system32 al directori  c:\>dlls, verificant que s’escriuen correctament.
+
+COMANDA:  c:\>copy  c:\Windows\System32\a*dll c:\dlls
+
+
+
+
+k) Copia dos fitxers qualsevol amb  una  sola instrucció al directori practica2. 
+
+COMANDA: c:\>copy c:\dlls\ab*.dll c:\Users\LucasA
+
+
+
+
+
+Utilitzant la comanda REN o RENAME respon:
+
+l)  Escriu  la  instrucció  que  canvia  el  nom  del  fitxer  autoexec.bat  per autoexec.bak.
+
+COMANDA: c:\>rename aadauthhelper.dll paquitoelchocolatero.txt
+
+
+
+
+
+
+Utilitzant la comanda MOVE respon :
+
+m) Tria una de les dlls copiades i mou-la a l'arrel d'aquest.
+
+COMANDA: c:\>move addcloudapp.dll c:\Users\LucasA
+
+
+
+
+
+Utilitzant la comanda DEL o ERASE respon :
+
+n) Quina instrucció usaràs per a eliminar tots els arxius del directori dlls demanant confirmació?
+
+COMANDA: c:\dlls>del *.*
+
+
+
+
+
+o) si no vols que et demani conformació
+
+COMANDA: c:\dlls>del *.* /Q
+
+
+
+
+3.- Estructura de directoris MSDOS
+
+1. Mitjançant la utilització de les comandes del MSDOS, es pretén que creïs la següent estructura de directoris ( unitat C: ). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Escriviu les comandes necessàries.
+
+COMANDES: 
+c:\>mkdir dos windowsdos pascal util windowsdos\qpro windowsdos\word windowsdos\paradox
+windowsdos\word\texto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.Escriviu la ruta ( path ) des del directori arrel fins a:
+
+
+Directori
+Ruta
+UTIL
+C:\UTIL
+DOS
+C:\DOS
+WORD
+C:\WINDOWSDOS\WORD
+TEXTOS
+C:\WINDOWSDOS\WORD\textos
+ARREL
+C:\
+
+
+3.Què aconseguim amb
+
+COMANDA
+Explicació
+Captura de pantalla
+DIR *. *
+
+te enseña todos los archivos del directorio
+
+
+
+DIR c:\windows /w /p
+
+
+Te enseña los archivos apaisado
+
+
+
+
+
+DIR /C /B
+
+
+Solo te muestra el nombre de los ficheros
+
+
+
+
+
+
+
+Crea les següents estructures de directoris en la unitat   C: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Escriviu les ordres necessàries per crear tota l'estructura de directoris de la unitat C:
+
+COMANDES: 
+C:\>dir UTILILITY DOS60 WINDOWS2 WINDOWS2\SYSTEM WINDOWS2\TEMP WINDOWS2\MSAPPS WINDOWS2\MSAPPS\MSGRAPH WINDOWS2\MSAPPS\WORDART WINDOWS2\MSAPPS\MSDRAW WINDOWS2\MSAPPS\EQUATION WINDOWS2\MSAPPS\GRPHFLT WINWORD WINWORD\CLIPARTS WINWORD\TEXTOS VIRUS
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Copieu tots els arxius que comencin per la lletra 'D' del directori DOS60 de C:\ al directori TEXTOS de la unitat C:\
+
+COMANDA: 
+>copy C:\DOS60\D* C:\WINWORD\TEXTOS
+
+
+
+
+
+3. Anar al directori MSDRAW de  C:\
+
+COMANDA: 
+>cd C:\WINDOWS\MSAPPS\MSDRAW
+
+
+
+
+
+4. Copiar tots els arxius del subdirectori FONTS de C:\ al directori CLIPART de  C:\
+
+COMANDA: 
+>copy C:\QPRO\FONTS\ C:\WINWORD\CLIPART
+
+
+
+
+
+5. Doneu les ordres  necessàries  per a esborrar l'estructura del directori WINWORD (inclòs), tenint  en compte que pot haver-hi arxius.
+
+COMANDA: 
+>rd C:\WINWORD /s
+
+
+
+
+
+4.- Directoris, Rutes d'accés, Indicador del sistema, Atributs i Variables d'entorn
+
+1. Digueu què obtindrem si executem les següents instruccions:
+
+
+
+Comanda
+Explicació
+Captura de pantalla
+DIR *. /on
+Enumera todos los archivos del directorio actual ordenándolos alfabéticamente
+
+
+DIR /b /p
+Muestra una lista completa en una sola pantalla de directorios y archivos.
+
+
+DIR . /ogn /w
+Muestra en formato ancho, primero los directorios de grupo y en orden alfabético
+
+
+DIR . /od /p
+Muestra los archivos en una sola pantalla, ordenados por columna y en formato ancho.
+
+
+
+
+
+2. Situeu-vos a l'arrel del disc dur C: i executeu les següents ordres: (Digueu quins arxius i directoris es visualitzen cada cop (no els llisteu; indiqueu el que fa la instrucció).
+
+Comanda
+Explicació
+Captura de pantalla
+DIR   /ad
+Muestra los nombres de los directorios
+
+
+DIR   /ah
+Muestra los nombres de los archivos ocultos
+
+
+DIR   /aa
+Muestra los nombres de los archivos listos para archivar
+
+
+DIR   /ar
+Muestra los nombres de los archivos solo de lectura
+
+
+DIR   /as
+Muestra los nombres de los archivos del sistema
+
+
+
+
+3. Voleu crear un directori anomenat SECRET i el voleu ocultar, com ho feu ?
+
+
+COMANDA: c:\> attrib +H secret
+
+
+
+
+
+
+
+
+
+
+4. Quina és la comanda per a saber com es diuen els directoris ocults ?
+Situeu-vos a C:\ dos i respongueu a les següents preguntes indicant les ordres:
+
+COMANDA: dir /H
+
+
+
+
+
+
+5. Instrucció per a llistar els arxius classificats per tamany. Quin és el més gran i el més petit ?
+
+COMANDA: dir /OS
+
+
+
+
+
+
+6. Preneu nota de les extensions i expliqueu-les (les que conegueu).
+
+COMANDA: .html =hipervículo, .doc=texto, .mp4=vídeo, .mp3=audio
+
+
+
+
+
+
+7. Quants arxius .exe hi ha? Quant ocupen ?
+
+COMANDA: 
+
+
+
+
+
+
+8. Quants arxius comencen per mw i tenen extensió .exe ?
+
+COMANDA: 
+
+
+
+
+
+
+9. Si executem la comanda ATTRIB /s què passa ?
+
+
+COMANDA: 
+Procesa archivos que coinciden en la carpeta actual
+      y todas las subcarpetas.
